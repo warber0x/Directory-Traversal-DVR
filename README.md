@@ -7,7 +7,7 @@ As you noticed the parameters FILEOK & FILEFAIL contain the pages that the DVR w
 
 The last part of this discovery is the directory traversal vulnerability. Calling the same url but now we will try to show an unauthorized content like /etc/passwd or /etc/shadow. To do the trick we will use ../ and we'll going back to parent directory till we found the file we wanted to show.
 
-Demo: Since we're not giving the correct password, the DVR will redirect us to denied.htm, so we're going to use that parameter to point to the desired file.
+Since we're not giving the correct password, the DVR will redirect us to denied.htm, so we're going to use that parameter to point to the desired file.
 
 curl -d "WAPLOGIN=admin&WAPPASSWORD=admin&PIC_SIZE=RES_0&FILEOK=camera.htm&FILEFAIL=../../etc/passwd&Submit=OK" http://x.x.x.x/cgi-bin/wappwd
 
